@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GamePlane</string>
+    <string name="start_game">Play</string>
+    <string name="exit_game">Exit Game</string>
+
+    <string name="score">Score</string>
+    <string name="restart">RePlay</string>
+</resources>

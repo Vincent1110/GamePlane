@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">飛機大戰</string>
+    <string name="start_game">開始遊戲</string>
+    <string name="exit_game">退出遊戲</string>
+
+    <string name="score">分數</string>
+    <string name="restart">重新開始</string>
+</resources>
