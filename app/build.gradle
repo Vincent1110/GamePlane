@@ -5,16 +5,40 @@ android {
     buildToolsVersion "26.0.1"
 
     defaultConfig {
-        applicationId "com.ispring.gameplane"
+        applicationId "com.totoro.plane"
         minSdkVersion 8
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
+
+    signingConfigs {
+        release {
+            storeFile file("plane.jks")
+            storePassword "123654"
+            keyAlias "plane"
+            keyPassword "123654"
+        }
+    }
+
+
     buildTypes {
         release {
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            debuggable false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
+
+        debug {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            shrinkResources false
+            debuggable false
+            signingConfig signingConfigs.debug
         }
     }
 }

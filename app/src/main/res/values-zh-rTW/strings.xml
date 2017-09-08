@@ -7,4 +7,5 @@
 
     <string name="score">分數</string>
     <string name="restart">重新開始</string>
+    <string name="continueplay">繼續</string>
 </resources>
